@@ -1,7 +1,7 @@
 /**
  * This script initializes and returns 3 ClassRoom objects.
  */
-import ClassRoom from './0-classroom.js';
+import ClassRoom from './0-classroom';
 
 /**
  * Initializes and returns an array containing three ClassRoom objects.

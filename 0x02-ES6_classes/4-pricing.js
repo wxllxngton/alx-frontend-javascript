@@ -1,4 +1,4 @@
-import Currency from './3-currency.js';
+import Currency from './3-currency';
 /**
  * Represents a Pricing with attributes such as amount and currency.
  */
