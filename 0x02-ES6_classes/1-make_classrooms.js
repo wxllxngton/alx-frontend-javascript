@@ -9,5 +9,5 @@ import ClassRoom from './0-classroom';
  * @returns {Array} Array containing three initialized ClassRoom objects.
  */
 export default function initializeRooms() {
-  return [new ClassRoom(19), new ClassRoom(20), new ClassRoom(24)];
+  return [new ClassRoom(19), new ClassRoom(20), new ClassRoom(34)];
 }
