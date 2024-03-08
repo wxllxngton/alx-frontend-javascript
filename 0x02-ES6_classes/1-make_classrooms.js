@@ -8,8 +8,6 @@ import ClassRoom from './0-classroom.js';
  *
  * @returns {Array} Array containing three initialized ClassRoom objects.
  */
-const initializeRooms = () => {
-    return [new ClassRoom(19), new ClassRoom(20), new ClassRoom(24)];
-};
+const initializeRooms = () => [new ClassRoom(19), new ClassRoom(20), new ClassRoom(24)];
 
 export default initializeRooms;
