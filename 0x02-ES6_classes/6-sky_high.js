@@ -2,7 +2,7 @@
  * Represents the SkyHighBuilding class, extending the Building class.
  * @class
  */
-import Building from './5-building.js';
+import Building from './5-building';
 
 export default class SkyHighBuilding extends Building {
   /**
