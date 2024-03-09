@@ -2,66 +2,66 @@
  * Represents the HolbertonClass class.
  */
 export class HolbertonClass {
-    constructor(year, location) {
-        this._year = year;
-        this._location = location;
-    }
+  constructor(year, location) {
+    this._year = year;
+    this._location = location;
+  }
 
-    /**
+  /**
      * Gets the year of the HolbertonClass.
      *
      * @returns {number} The year.
      */
-    get year() {
-        return this._year;
-    }
+  get year() {
+    return this._year;
+  }
 
-    /**
+  /**
      * Gets the location of the HolbertonClass.
      *
      * @returns {string} The location.
      */
-    get location() {
-        return this._location;
-    }
+  get location() {
+    return this._location;
+  }
 }
 
 /**
  * Represents the StudentHolberton class.
  */
 export class StudentHolberton {
-    constructor(firstName, lastName, holbertonClass) {
-        this._firstName = firstName;
-        this._lastName = lastName;
-        this._holbertonClass = holbertonClass;
-    }
+  constructor(firstName, lastName, holbertonClass) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+    this._holbertonClass = holbertonClass;
+  }
 
-    /**
+  /**
      * Gets the full name of the student.
      *
      * @returns {string} The full name.
      */
-    get fullName() {
-        return `${this._firstName} ${this._lastName}`;
-    }
+  get fullName() {
+    return `${this._firstName} ${this._lastName}`;
+  }
 
-    /**
+  /**
      * Gets the associated HolbertonClass of the student.
      *
      * @returns {HolbertonClass} The associated HolbertonClass.
      */
-    get holbertonClass() {
-        return this._holbertonClass;
-    }
+  get holbertonClass() {
+    return this._holbertonClass;
+  }
 
-    /**
+  /**
      * Gets the full description of the student including name, HolbertonClass year, and location.
      *
      * @returns {string} The full description.
      */
-    get fullStudentDescription() {
-        return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
-    }
+  get fullStudentDescription() {
+    return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
+  }
 }
 
 // Instances of HolbertonClass
