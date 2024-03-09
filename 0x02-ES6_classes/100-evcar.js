@@ -43,7 +43,7 @@ export default class EVCar extends Car {
      *
      * @returns {Car} The cloned Car instance.
      */
-  cloneCar() {
-    return new Car();
+  static get [Symbol.species]() {
+    return Car;
   }
 }
