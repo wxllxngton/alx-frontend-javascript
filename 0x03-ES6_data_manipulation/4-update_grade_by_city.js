@@ -7,15 +7,16 @@
  * @returns {Array} An array of student objects with updated grades for the specified city.
  */
 /* eslint-disable-next-line max-len */
-const updateStudentGradeByCity = (listOfStudentObjects, city, newGrades) => listOfStudentObjects.map((studentObject) => {
-  const student = studentObject;
-  if (student.location === city) {
-    const matchingGrade = newGrades.find(
-      (gradeInfo) => gradeInfo.studentId === student.id,
-    );
-    student.grade = matchingGrade ? matchingGrade.grade : 'N/A';
-  }
-  return student;
-});
+const updateStudentGradeByCity = (listOfStudentObjects, city, newGrades) => listOfStudentObjects
+  .filter((studentObject) => studentObject.location === city)
+  .map((studentObject) => {
+    const student = studentObject;
+    for (const gradeData of newGrades) {
+      if (gradeData.studentId === student.id) student.grade = gradeData.grade;
+      else student.grade = 'N/A';
+    }
+
+    return student;
+  });
 
 export default updateStudentGradeByCity;
