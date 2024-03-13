@@ -6,20 +6,13 @@
  * @returns {string} A string containing all the set values that start with the specified string.
  */
 const cleanSet = (set, startString) => {
-  // Check if startString is an empty string
-  if (startString === '') {
-    return ''; // Return an empty string if startString is empty
-  }
-
-  /**
-     * Convert the set to an array,
-     * filter values starting with startString,
-     * and join them into a string
-     */
-  return Array.from(set)
-    .filter((el) => el.startsWith(startString))
-    .map((el) => el.slice(startString.length))
-    .join('-');
+    if (startString === undefined || startString.length === 0) {
+        return '';
+      }
+      return [...set]
+        .filter((str) => (str !== undefined ? str.startsWith(startString) : ''))
+        .map((str) => (str !== undefined ? str.slice(startString.length) : ''))
+        .join('-');
 };
 
 export default cleanSet;
