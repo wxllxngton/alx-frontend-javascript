@@ -11,10 +11,10 @@
  */
 
 export default function signUpUser(firstName, lastName) {
-    return new Promise((resolves) => {
-        resolves({
-            firstName,
-            lastName,
-        });
+  return new Promise((resolves) => {
+    resolves({
+      firstName,
+      lastName,
     });
+  });
 }

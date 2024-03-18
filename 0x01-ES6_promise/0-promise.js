@@ -8,5 +8,5 @@
  * @returns {Promise} A promise that resolves immediately.
  */
 export default function getResponseFromAPI() {
-    return Promise.resolve();
+  return Promise.resolve();
 }

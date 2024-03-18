@@ -10,5 +10,5 @@
  * @returns {Promise} A Promise that resolves with the first completed download.
  */
 export default function loadBalancer(chinaDownload, USDownload) {
-    return Promise.race([chinaDownload, USDownload]);
+  return Promise.race([chinaDownload, USDownload]);
 }

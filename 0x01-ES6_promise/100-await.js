@@ -2,7 +2,7 @@
  * Asynchronously uploads a photo and creates a user.
  */
 
-import { createUser, uploadPhoto } from './utils.js';
+import { createUser, uploadPhoto } from './utils';
 
 /**
  * Asynchronously uploads a photo and creates a user.
@@ -11,14 +11,14 @@ import { createUser, uploadPhoto } from './utils.js';
  * the photo and user information.
  */
 export default async function asyncUploadUser() {
-    let res = {};
+  let res = {};
 
-    try {
-        const photo = await uploadPhoto();
-        const user = await createUser();
-        res = { photo, user };
-    } catch (err) {
-        res = { photo: null, user: null };
-    }
-    return res;
+  try {
+    const photo = await uploadPhoto();
+    const user = await createUser();
+    res = { photo, user };
+  } catch (err) {
+    res = { photo: null, user: null };
+  }
+  return res;
 }
